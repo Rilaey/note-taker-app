@@ -8,7 +8,7 @@ const uniqid = require('uniqid')
 let db = require('./db/db.json')
 
 // port for local host
-const PORT = 6999;
+const PORT = process.env.PORT || 6999;
 
 // turn app into a function
 const app = express()
