@@ -26,7 +26,7 @@ app.use(express.static('public'));
 
 // GET route for index html
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/public/index.html'))
+    res.sendFile(path.join(__dirname, '../index.html'))
 })
 
 // GET route for notes html
