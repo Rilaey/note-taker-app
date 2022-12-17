@@ -18,7 +18,9 @@
   - None
 
   ## Usage
-  - Visit the application at 
+  - Visit the application at https://take-some-notes-today.herokuapp.com/
+  ![screenshot of home html](./develop/public/assets/img/home%3Ahtml.png)
+  ![screenshot of notes html](./develop/public/assets/img/notes%3Ahtml.png)
 
   ## License
   -  No License

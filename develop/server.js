@@ -96,12 +96,17 @@ app.post('/api/notes', (req, res) => {
 ////////////// DELETE ROUTES ///////////////////////
 ////////////////////////////////////////////////////
 
-// app.delete('/api/notes/:id', (req, res) => {
-//     // deconstruct params
-//     const { id } = req.params;
-
+app.delete('/api/notes/:id', (req, res) => {
+    let id = req.params.id;
+    let index = db.findIndex((st) => st.id === id);
     
-// })
+    if(index) {
+        delete index;
+        res.send('note deleted;')
+    } else {
+        return res.status(404).json('note not found')
+    }
+})
 
 // alert for server start
 app.listen(PORT, () => {
